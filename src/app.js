@@ -9,11 +9,7 @@ import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-// store.dispatch(addExpense({ description: 'Water Bill', amount: 1500, createdAt: 0 }));
-// store.dispatch(addExpense({ description: 'Gas Bill', amount: 1200, createdAt: 1000 }));
-// store.dispatch(addExpense({ description: 'Rent', amount: 3000, createdAt: 0 }));
-// const state = store.getState();
-// const visibleExpenses = getVisibleExpenses(state.expense, state.filter);
+console.log('test');
 const jsx = (
     <Provider store={store}>
         <AppRoute />
