@@ -10,7 +10,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "build-css": "sass style.scss newStyle.css"
+    "build-css": "sass style.scss newStyle.css",
+    "start": "node Server/server.js",
+    "heroku-postbuild" : "npm run build:prod"
   },
   "author": "Ben",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "live-server": "^1.2.1",
     "moment": "^2.29.0",
